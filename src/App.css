@@ -1,0 +1,24 @@
+.login{
+    max-width: 30%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    text-align: center;
+}
+
+.logoc{
+    margin-top: 5%;
+    text-align: center;
+}
+.btbox{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
