@@ -1,6 +1,12 @@
 import logo from "../images/logo.png";
-import { Outlet, Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { createUserWithEmailAndPassword } from "../config/firebase";
 export default function Login() {
+  let navigate = useNavigate();
+  function submit() {
+    console.log("submit");
+    navigate("/home");
+  }
   return (
     <>
       <div className="logoc">
@@ -17,7 +23,7 @@ export default function Login() {
             <input type="password" className="form-control" />
           </div>
           <div className="btbox">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" onClick={submit} className="btn btn-primary">
               Login
             </button>
             <Link to="/signup" className="btn btn-primary">
